@@ -1,5 +1,7 @@
-export const createStore = (data) => {
-  type TState = typeof data;
+import { StoreApi } from "./types/store";
+
+export const createStore = (createState) => {
+  type TState = typeof createState;
 
   let state: TState;
 
@@ -13,5 +15,9 @@ export const createStore = (data) => {
 
   const getState = () => state;
 
-  return { setState, getState };
+  const api: StoreApi<TState> = { setState, getState };
+
+  state = createState(setState, getState, api);
+
+  return api;
 };

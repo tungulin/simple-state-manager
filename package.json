@@ -5,10 +5,15 @@
   "repository": "https://github.com/tungulin/simple-state-manager",
   "author": "tungulin <tungulin2002@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "vitest"
+  },
   "devDependencies": {
     "eslint": "^9.29.0",
+    "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
+    "vite": "^4.4.0",
     "vitest": "^3.2.4"
   }
 }

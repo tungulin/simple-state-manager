@@ -3,7 +3,13 @@
     "allowJs": true,
     "checkJs": true,
     "rootDir": ".",
-    "target": "es2015"
+    "target": "es2015",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "simple-state": ["./src/index.ts"],
+      "simple-state/*": ["./src/*.ts"]
+    }
   },
   "include": ["."]
 }
