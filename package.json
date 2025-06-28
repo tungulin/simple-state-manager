@@ -1,0 +1,14 @@
+{
+  "name": "simple-state-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tungulin/simple-state-manager",
+  "author": "tungulin <tungulin2002@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

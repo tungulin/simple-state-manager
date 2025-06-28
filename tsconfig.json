@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "rootDir": ".",
+    "target": "es2015"
+  },
+  "include": ["."]
+}
