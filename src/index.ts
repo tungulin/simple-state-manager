@@ -1,13 +1,10 @@
 export { createStore } from "./createStore";
 
+// Example
 // const store = createStore((set) => ({
-//   state: {
-//     counter: 0,
-//   },
-//   actions: {
-//     addCount: (count) =>
-//       set((state) => {
-//         state.counter += count;
-//       }),
-//   },
+//   counter: 0,
+//   addCount: (count: number) =>
+//     set((state) => {
+//       state.counter += count;
+//     }),
 // }));

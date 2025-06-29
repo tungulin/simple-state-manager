@@ -1,11 +1,11 @@
-import { StoreApi } from "./types/store";
+import { CreateState, StoreApi } from "./types/store";
 
-export const createStore = (createState) => {
-  type TState = typeof createState;
+export const createStore = <T>(createState: CreateState<T>): StoreApi<T> => {
+  type TState = ReturnType<typeof createState>;
 
   let state: TState;
 
-  const setState = (partial) => {
+  const setState = (partial: TState) => {
     const nextState = typeof partial === "function" ? partial(state) : partial;
 
     if (!Object.is(state, nextState)) {
